@@ -1,0 +1,1043 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<!-- cars -->
+<div class="h1 text-center my-4 line-th">
+        <span>Cars</span>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/Zenvo.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="zenvo"
+            />
+
+            <h4 class="text-center pt-2">Zenvo ST-1</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#zenvo"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="zenvo"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="zenvoTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/Zenvo-interior.jpg' %}"
+                                                    alt="Zenvo-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/Zenvo-interior-1.jpg' %}"
+                                                    alt="Zenvo-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/Zenvo-interior-2.jpg' %}"
+                                                    alt="Zenvo-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/Zenvo-interior-3.jpg' %}"
+                                                    alt="Zenvo-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Zenvo ST-1
+                                        </h3>
+                                        <p class="lead">
+                                            As an extreme example of our
+                                            ST-1 GT road car, the TSR
+                                            was developed primarily for
+                                            track-use which made it the
+                                            ideal test-bed for many
+                                            Zenvo engineering
+                                            innovations - from the Sport
+                                            gearbox to the unique
+                                            clutch, aerodynamics and 5.8
+                                            litre V8 twin-Rotrex
+                                            Supercharged engine. 250kg
+                                            lighter than the TS1 GT and
+                                            with revised gearing and
+                                            power delivery software, the
+                                            TSR is a formidable track
+                                            car with very few rivals.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $750,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/koenigsegg.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="koenigsegg"
+            />
+
+            <h4 class="text-center pt-2">Koenigsegg Agera</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#koenigsegg"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="koenigsegg"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="koenigseggTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/koenigsegg-interior.jpg' %}"
+                                                    alt="koenigsegg-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/koenigsegg-interior-1.jpg' %}"
+                                                    alt="koenigsegg-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/koenigsegg-interior-2.jpg' %}"
+                                                    alt="koenigsegg-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/koenigsegg-interior-3.jpg' %}"
+                                                    alt="koenigsegg-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Koenigsegg Agera
+                                        </h3>
+                                        <p class="lead">
+                                            The Koenigsegg Agera
+                                            combines a powerful
+                                            twin-turbo V8 combustion
+                                            engine with three electric
+                                            motors and cutting edge
+                                            battery power via new
+                                            powertrain technology called
+                                            Koenigsegg Direct Drive.
+                                            This revolutionary
+                                            technology removes the
+                                            traditional gearbox, making
+                                            the car lighter and more
+                                            efficient.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $375,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/pagani.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="pagani"
+            />
+
+            <h4 class="text-center pt-2">Pagani Zonda</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#pagani"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="pagani"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="paganiTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/pagani-interior.jpg' %}"
+                                                    alt="pagani-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/pagani-interior-1.jpg' %}"
+                                                    alt="pagani-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/pagani-interior-2.jpg' %}"
+                                                    alt="pagani-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/pagani-interior-3.jpg' %}"
+                                                    alt="pagani-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Pagani Zonda
+                                        </h3>
+                                        <p class="lead">
+                                            Designed to celebrate the
+                                            harmony between art and
+                                            science, these cars can
+                                            catch the moment. Past and
+                                            future meet at the perfect
+                                            time, at the exact instant
+                                            when the wind of creativity
+                                            starts to blow. And that’s
+                                            how Pagani Zonda was born: a
+                                            car of unique beauty, like a
+                                            work of art made from a
+                                            block of Carrara marble.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $500,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/bentley.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="bentley"
+            />
+
+            <h4 class="text-center pt-2">Bentley Continental</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#bentley"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="bentley"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="bentleyTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/bentley-interior.jpg' %}"
+                                                    alt="bentley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/bentley-interior-1.jpg' %}"
+                                                    alt="bentley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/bentley-interior-2.jpg' %}"
+                                                    alt="bentley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/bentley-interior-3.jpg' %}"
+                                                    alt="bentley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Bentley Continental GT
+                                        </h3>
+                                        <p class="lead">
+                                            With a completely new 6.0
+                                            litre, twin-turbocharged W12
+                                            engine, a step-change in
+                                            technology and a truly
+                                            stunning design language,
+                                            the new Continental GT is
+                                            unmatched in its class. This
+                                            Bentley GT coupé is the
+                                            quintessential grand tourer
+                                            – phenomenally powerful,
+                                            beautifully designed and
+                                            exquisitely crafted.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $350,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+    </div>
+    <!-- end of cars -->
+
+    <div class="py-2 my-5">
+        <hr />
+    </div>
+
+    <!-- Bikes -->
+    <div class="h1 text-center my-4 line-th">
+        <span>Motorcycles</span>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/aprilia.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="aprilia"
+            />
+
+            <h4 class="text-center pt-2">Aprilia RSV4 X</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#aprilia"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="aprilia"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="apriliaTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/Aprilia-interior.jpg' %}"
+                                                    alt="Aprilia-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/Aprilia-interior-1.jpg' %}"
+                                                    alt="Aprilia-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/Aprilia-interior-2.jpg' %}"
+                                                    alt="Aprilia-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/Aprilia-interior-3.jpg' %}"
+                                                    alt="Aprilia-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Aprilia RSV4 X
+                                        </h3>
+                                        <p class="lead">
+                                            Aprilia RSV4 X, a special
+                                            celebratory version of the
+                                            V4 from Noale made by
+                                            Aprilia Racing in a limited
+                                            edition of ten units to
+                                            celebrate the ten-year
+                                            anniversary of a project
+                                            that won seven WSBK titles,
+                                            is being delivered to the
+                                            lucky buyers of the most
+                                            exclusive super sport bike.
+                                            The “launch” of the RSV4 X
+                                            deliveries was christened by
+                                            an exceptional tester, Max
+                                            Biaggi, who decided to take
+                                            his RSV4 X out on the track
+                                            immediately, which confirms
+                                            that this is a special bike
+                                            for special enthusiasts.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $90,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/ducati.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="ducati"
+            />
+
+            <h4 class="text-center pt-2">Ducati Monster 750</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#ducati"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="ducati"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="ducatiTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/ducati-interior.jpg' %}"
+                                                    alt="ducati-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/ducati-interior-1.jpg' %}"
+                                                    alt="ducati-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/ducati-interior-2.jpg' %}"
+                                                    alt="ducati-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/ducati-interior-3.jpg' %}"
+                                                    alt="ducati-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Ducati Monster 750
+                                        </h3>
+                                        <p class="lead">
+                                            When it had first entered
+                                            the Indian market, Ducati
+                                            had introduced several
+                                            models from its range and
+                                            that too at pretty
+                                            aggressive prices. As far as
+                                            the Scrambler is concerned,
+                                            Ducati has launched only
+                                            variant at present as it
+                                            wanted to gauge the customer
+                                            The Scrambler is
+                                            manufactured at Ducati’s
+                                            Thailand plant for global
+                                            export markets, and the
+                                            Indian models will be
+                                            shipped from this plant, a
+                                            person in the know told
+                                            Indian Autos Blog. Power for
+                                            the Scrambler comes from a
+                                            L-twin engine displacing 803
+                                            cc.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $65,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/harley-davidson.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="harley"
+            />
+
+            <h4 class="text-center pt-2">
+                Harley Davidson Low Rider S
+            </h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#harley"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="harley"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="harleyTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/harley-interior.jpg' %}"
+                                                    alt="harley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/harley-interior-1.jpg' %}"
+                                                    alt="harley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/harley-interior-2.jpg' %}"
+                                                    alt="harley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/harley-interior-3.jpg' %}"
+                                                    alt="harley-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Harley Davidson Low Rider S
+                                        </h3>
+                                        <p class="lead">
+                                            The new blacked-out Low
+                                            Rider S motorcycle combines
+                                            the power of the
+                                            Milwaukee-Eight 114 engine
+                                            and the capable Softail
+                                            chassis with premium
+                                            suspension All comparisons
+                                            made are between original
+                                            equipment 2019 and 2020
+                                            models. Low Rider® S is an
+                                            all-new blacked-out
+                                            performance-cruiser with a
+                                            style that’s as aggressive
+                                            as its ride. You can build a
+                                            Harley-Davidson® motorcycle
+                                            unlike any other on the
+                                            road.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $80,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+
+        <div class="col-sm-3 py-4">
+            <img
+                src="{% static 'img/kawasaki.jpg' %}"
+                class="img-fluid img-thumbnail"
+                alt="kawasaki"
+            />
+
+            <h4 class="text-center pt-2">Kawasaki Ninja</h4>
+
+            <!-- Button trigger modal -->
+            <button
+                type="button"
+                class="btn btn-primary ml-5 my-1"
+                data-toggle="modal"
+                data-target="#kawasaki"
+            >
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="kawasaki"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="kawasakiTitle"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-xl modal-dialog-centered"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img
+                                                    src="{% static 'img/kawasaki-interior.jpg' %}"
+                                                    alt="kawasaki-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/kawasaki-interior-1.jpg' %}"
+                                                    alt="kawasaki-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/kawasaki-interior-2.jpg' %}"
+                                                    alt="kawasaki-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="{% static 'img/kawasaki-interior-3.jpg' %}"
+                                                    alt="kawasaki-interior"
+                                                    class="img-fluid img-thumbnail"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <h3 class="text-center mb-3">
+                                            Kawasaki Ninja
+                                        </h3>
+                                        <p class="lead">
+                                            After only a few seasons in
+                                            the Kawasaki range, each
+                                            style of machine has found
+                                            its own loyal following
+                                            across a wide range of
+                                            riders; from those that
+                                            identified with the
+                                            evocative Z1 style paint and
+                                            graphic approach of just one
+                                            of the three colours on
+                                            offer for the Z900RS to the
+                                            zestful and bold approach of
+                                            the Z900RS CAFE. These
+                                            modern classics with their
+                                            multitude of references to
+                                            the iconic Z1 Super Four of
+                                            1972.
+                                        </p>
+                                        <p class="font-weight-bold text-center">Price: $50,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
+            <button
+                type="button"
+                class="btn btn-warning float-right mr-5 my-1"
+            >
+                Order Now
+            </button>
+        </div>
+    </div>
+{% endblock %}

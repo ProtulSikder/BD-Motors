@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login || {{ block.super }}
+{% endblock %}
+
+{% block header %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+{% if error %}
+    <p class="lead text-center bg-danger mt-3 py-3 text-white">{{ error }}</p>
+{% endif %}
+
+<div class="card card-body bg-info col-sm-4 offset-sm-4 mt-5 mb-3">
+    <div class="card-title text-center text-light">
+        <h2 class="capitalize">BD Motors</h2>
+    </div>
+    <div class="card-subtitle text-center text-light">
+        <p>Login</p>
+    </div>
+
+    <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="far fa-id-badge"></i><span class="px-1"></span>ID Number
+                </span>
+            </div>
+            <input type="number" class="form-control" name="id" required>
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-key"></i><span class="px-1"></span>Password
+                </span>
+            </div>
+            <input type="password" class="form-control" name="pass" required>
+        </div>
+
+        <button type="submit" class="my-3 btn btn-outline-dark btn-block text-uppercase">Login</button>
+    </form>
+</div>
+
+<div class="text-center small">
+    © 2019 Copyright: BD Motors
+</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
